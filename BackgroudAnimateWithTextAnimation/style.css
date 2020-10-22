@@ -1,0 +1,136 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: black;
+
+}
+
+
+a{
+    text-decoration: none;
+}
+ a:hover{
+     text-decoration: none;
+ }
+#particles-js{
+    height: 100%;
+    background: #262626;
+}
+
+
+
+.wrapper{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+}
+
+.wrapper h1{
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    text-shadow: 0 2px 0 rgba(0, 0, 0, 0.5);
+    font-size: 60px;
+
+}
+
+.wrapper p{
+    color: #fff ;
+    font-size: 20px;
+    margin: 0;
+    line-height: 25px;
+}
+
+#check span:before{
+    content: " ";
+    animation: animate infinite 8s;
+}
+
+@keyframes animate{
+0%{
+    content: "Photography-vediography";
+}
+20%{
+    content: "Game development";
+}
+40%{
+    content: "UX/UI desinging";
+}
+80%{
+    content: "Web development ";
+}
+100%{
+    content: " App development";
+}
+}
+
+.button a{
+    position: relative;
+    display: inline-block;
+    padding: 25px 30px;
+    margin: 40px 0;
+    color:#03e9f4;
+    font-size:30px;
+    overflow: hidden;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    border-radius: 5px;
+    -webkit-box-reflect: below 1px linear-gradient(transparent ,#0005 );
+}
+.button a:hover{
+     background: #03e9f4;
+     color:whitesmoke;
+        text-decoration: none;
+     box-shadow: 0 0 5px #03e9f4,
+                 0 0 25px #03e9f4,
+                 0 0 50px #03e9f4,
+                 0 0 200px #03e9f4;
+                   
+                 
+ }
+ .button a span{
+     position: absolute;
+     display: block;
+
+ }
+.button a span:nth-child(1 ){
+    right:-100px;
+    bottom:0;
+    height:2px;;
+    width:100%;
+    background:linear-gradient(270deg,transparent,#03e9f4);
+    animation:animate3 1s linear infinite;
+    animation-delay: 0.5s;
+}
+@keyframes animate3{
+    0%{
+        right:-100%;
+    }
+    50%,100%{
+        right:100%;
+    }
+}
+
+@media screen and (max-width:800){
+    .left , .main ,.right{
+        width:100%;
+    }
+}
+
+#particles-js{
+    width: 100%;
+    height: 100%;
+    background-size:cover ;
+    background-position:center ;
+    background-repeat: no-repeat;
+}
+canvas{
+    width: 100%;
+    height: 100%;
+    display: block;
+    vertical-align: bottom;
+}
